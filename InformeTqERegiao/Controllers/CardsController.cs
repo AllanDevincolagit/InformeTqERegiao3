@@ -8,17 +8,17 @@ namespace InformeTqERegiao.Controllers
 {
     public class CardsController : Controller
     {
-        public IActionResult Farmacias()
+        public IActionResult Saude()
         {
             return View();
         }
 
-        public IActionResult Hospitais()
+        public IActionResult Compras()
         {
             return View();
         }
 
-        public IActionResult Supermercados()
+        public IActionResult Lazer()
         {
             return View();
         }

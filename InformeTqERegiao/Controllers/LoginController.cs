@@ -17,5 +17,10 @@ namespace InformeTqERegiao.Controllers
         {
             return View();
         }
+
+        public IActionResult Termos()
+        {
+            return View();
+        }
     }
 }

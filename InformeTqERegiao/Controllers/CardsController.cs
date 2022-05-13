@@ -22,5 +22,10 @@ namespace InformeTqERegiao.Controllers
         {
             return View();
         }
+
+        public IActionResult Variedades()
+        {
+            return View();
+        }
     }
 }

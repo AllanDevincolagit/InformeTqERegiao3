@@ -23,7 +23,7 @@ namespace InformeTqERegiao.Controllers
             return View();
         }
 
-        public IActionResult Variedades()
+        public IActionResult Servicos()
         {
             return View();
         }

@@ -6,24 +6,19 @@ using System.Threading.Tasks;
 
 namespace InformeTqERegiao.Controllers
 {
-    public class CardsController : Controller
+    public class LoginController : Controller
     {
-        public IActionResult Saude()
+        public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Compras()
+        public IActionResult Cadastro()
         {
             return View();
         }
 
-        public IActionResult Lazer()
-        {
-            return View();
-        }
-
-        public IActionResult Servicos()
+        public IActionResult Termos()
         {
             return View();
         }

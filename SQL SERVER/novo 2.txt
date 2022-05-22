@@ -1,0 +1,32 @@
+create table usuarios (
+		id int IDENTITY(1,1) NOT NULL,
+		login varchar(20) NOT NULL,
+		Senha varchar(150) NOT NULL,
+		NomeCompleto varchar(80) NOT NULL,
+		Email varchar(80) NOT NULL,
+		Cpf varchar (11)
+		CONSTRAINT PK_usuarios PRIMARY KEY(id)
+)
+
+create table permissao (
+	Id int IDENTITY(1,1) NOT NULL,
+	Descricao varchar(250) NOT NULL,
+	Role varchar(20) NOT NULL,
+	CONSTRAINT PK_permissao PRIMARY KEY (ID)
+)
+	
+create table permissao_usuarios (
+
+	Id int IDENTITY(1,1) NOT NULL,
+
+	PermissaoID int NOT NULL,
+
+	UsuarioID int NOT NULL,
+
+	CONSTRAINT PK_PERMISSAO_USUARIO PRIMARY KEY (Id),
+
+	CONSTRAINT FK_Usuarios FOREIGN KEY (UsuarioID)	REFERENCES usuarios(id),
+
+	CONSTRAINT FK_Permissao FOREIGN KEY (PermissaoID)	REFERENCES permissao (Id)
+
+)	

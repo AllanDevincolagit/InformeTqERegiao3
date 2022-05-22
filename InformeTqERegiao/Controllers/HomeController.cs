@@ -1,4 +1,4 @@
-﻿using InformeTqERegiao.Models;
+﻿using InformeTqERegiao.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using InformeTqERegiao.Models;
+using InformeTqERegiao.Entidades;
 
 namespace InformeTqERegiao.Controllers
 {

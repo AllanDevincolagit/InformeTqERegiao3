@@ -1,18 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using InformeTqERegiao.Models;
+using InformeTqERegiao.Entidades;
 
 namespace InformeTqERegiao
 {
     public class Contexto : DbContext
     {
         public Contexto(DbContextOptions<Contexto> opt) : base(opt) { }
-        public DbSet<InformeProblema> InformeProblem { get; set; }
-        
-        /*public DbSet<InformeProblema> SOBRENOME { get; set; }
-        public DbSet<InformeProblema> CPF { get; set; }
-        public DbSet<InformeProblema> TELEFONE { get; set; }
-        public DbSet<InformeProblema> EMAIL { get; set; }
-        public DbSet<InformeProblema> OCORRIDO { get; set; }*/
+        public DbSet<Cadastro_Clientes> CadastroClientes { get; set; }
+        public DbSet<Usuarios> usuarios { get; set; }
+        public DbSet<Permissao> permissao { get; set; }
+        public DbSet<Permissao_Usuario> permisao_usuario { get; set; }
+
 
     }
 }

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using InformeTqERegiao.Models;
+using InformeTqERegiao.Entidades;
 
 namespace InformeTqERegiao.Controllers
 {
@@ -14,14 +14,14 @@ namespace InformeTqERegiao.Controllers
             return View(lsInformeProblema);
         }
 
-        public static List<InformeProblema> lsInformeProblema = new List<InformeProblema>();
+        public static List<ProblemaDialogocs> lsInformeProblema = new List<ProblemaDialogocs>();
         public IActionResult Index()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Index(InformeProblema objeto)
+        public IActionResult Index(ProblemaDialogocs objeto)
         {
             lsInformeProblema.Add(objeto);
             return RedirectToAction("Index");

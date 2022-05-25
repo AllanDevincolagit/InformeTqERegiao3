@@ -9,7 +9,7 @@ namespace InformeTqERegiao.Controllers
     {
 
         private readonly Contexto db;
-        private Usuarios dadosTela;
+        private readonly Usuarios dadosTela;
 
         public Cadastro_Controller(Contexto contexto)
         {

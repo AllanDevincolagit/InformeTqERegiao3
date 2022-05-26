@@ -1,23 +1,25 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using InformeTqERegiao.Entidades;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
 namespace InformeTqERegiao.Controllers
 {
-    public class Cadastro : Controller
+    public class Cadastro_Controller : Controller
     {
 
         private readonly Contexto db;
+        private readonly Usuarios dadosTela;
 
-        public Cadastro(Contexto _db)
+        public Cadastro_Controller(Contexto contexto)
         {
-            db = _db;
+            db = contexto;
         }
 
         // GET: Cadastro
         public ActionResult Index()
         {
-            return View();
+            return View(db.usuarios.ToList());
         }
 
         // GET: Cadastro/Details/5
@@ -29,7 +31,9 @@ namespace InformeTqERegiao.Controllers
         // GET: Cadastro/Create
         public ActionResult Create()
         {
-            return View();
+            db.usuarios.Add(dadosTela);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         // POST: Cadastro/Create

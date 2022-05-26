@@ -9,7 +9,6 @@ namespace InformeTqERegiao.Entidades
     {
         public int id { get; set; }
         public string Descricao { get; set; }
-
         public string Role { get; set; }
     }
 }

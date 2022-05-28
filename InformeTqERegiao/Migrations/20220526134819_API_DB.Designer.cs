@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InformeTqERegiao.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20220526133056_API_DB")]
+    [Migration("20220526134819_API_DB")]
     partial class API_DB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

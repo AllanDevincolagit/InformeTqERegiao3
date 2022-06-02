@@ -11,7 +11,10 @@ namespace InformeTqERegiao.Entidades
         public string Login { get; set; }
         public string Senha { get; set; }
         public string NomeCompleto { get; set; }
+        public string CPF { get; set; }
         public string Email { get; set; }
+        public Cidades Cidades { get; set; }
         public string Telefone { get; set; }
+       
     }
 }
